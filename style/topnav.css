@@ -1,0 +1,42 @@
+/* Style for the top navigation bar */
+nav {
+   display: flex; /* 1: Flexbox for layout */
+   justify-content: space-between; /* 2: Space between logo and links */
+   padding: 1rem 2rem; /* 3: Padding around the nav */
+   background: #cfd8dc; /* 4: Background color */
+}
+
+/* Container for navigation links (ul) */
+nav ul {
+   display: flex; /* 5: Flexbox for the list */
+   list-style: none; /* 6: Remove bullet points */
+   margin: 0; /* Remove default margin */
+   padding: 0; /* Remove default padding */
+}
+
+/* Styling for each navigation item (li) */
+nav li {
+   padding-left: 1rem; /* 7: Space between list items */
+}
+
+/* Logo styling */
+#logo {
+   font-size: 1.5em;
+   font-weight: bold;
+   color: black;
+   text-decoration: none;
+}
+
+/* General style for navigation links */
+.nav-link {
+   color: black;
+   text-decoration: none;
+   display: block;
+   padding: 0.5rem; /* Adjust link padding */
+}
+
+/* Hover effects for links */
+.nav-link:hover {
+   background-color: #b0bec5;
+   color: black;
+}
