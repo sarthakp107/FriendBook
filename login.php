@@ -108,7 +108,7 @@
     </form>
 
     <?php
-    // Display error messages (if any)
+    // Display error messages
 if (!empty($errorMessages)) {
     echo '<div class="error-message">';
     foreach ($errorMessages as $error) {
