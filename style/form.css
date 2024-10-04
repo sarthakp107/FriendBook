@@ -1,0 +1,68 @@
+/* Center the form */
+.centered-form {
+    width: 100%;
+    max-width: 500px; /* Maximum form width */
+    padding: 40px;
+    background-color: white; /* Form background */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    box-sizing: border-box;
+    
+    /* Centering the form */
+    margin: 0 auto; /* Horizontal center */
+    position: absolute; /* Absolute positioning for vertical centering */
+    top: 50%; /* Push the form down by 50% of the viewport height */
+    left: 50%; /* Push the form right by 50% of the viewport width */
+    transform: translate(-50%, -50%); /* Offset the form's top-left corner */
+}
+
+/* Form styling */
+.centered-form label {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.centered-form input[type="text"],
+.centered-form input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.centered-form input[type="submit"],
+.centered-form input[type="reset"]  {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.centered-form input[type="reset"] {
+    background-color: #6c757d; /* Different color for the Clear button */
+}
+
+.centered-form a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Hover effects */
+.centered-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.centered-form a:hover {
+    color: #0056b3;
+}
