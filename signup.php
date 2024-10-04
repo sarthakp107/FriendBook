@@ -20,10 +20,11 @@
             </ul>
         </nav>
 
-        
+
 <?php
 
 require_once("settings.php");
+
 // Initialize variables
 $signUpEmail = "";
 $signUpProfileName = "";
