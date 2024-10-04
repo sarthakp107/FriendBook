@@ -76,7 +76,7 @@
                 if($dbPassword === $password){
                     // Set up session variable(s) and redirect to friendlist.php
                     session_start();
-                    $_SESSION['email'] = $inputEmail;
+                    $_SESSION['email'] = $email;
                     $_SESSION['loggedIn'] = true;
 
                     header("Location: friendlist.php");
