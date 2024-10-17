@@ -13,7 +13,7 @@
 
 <body>
     <nav>
-        <a id="logo" class="nav-link">My Friends System</a>
+        <a id="logo" class="nav-link" href="index.php">My Friends System</a>
         <ul>
             <li><a class="nav-link" href="login.php">Log Out</a></li>
             <li><a class="nav-link" href="about.php">About</a></li>
@@ -40,18 +40,21 @@
     $row = mysqli_fetch_assoc($result);
 
     // Get the profile name and number of friends
+    $userId = $row["friend_id"];
     $profileName = $row["profile_name"];
     $numOfFriends = $row["num_of_friends"];
-    $userId = $row["friend_id"];
-
+//friend id (table1) should match friend id 1 or 2 of myfriends table
     $sql = "SELECT f.friend_id, f.profile_name
           FROM $table1 f JOIN $table2 mf 
-          ON f.friend_id = mf.friend_id1 OR f.friend_id = mf.friend_id2
+          ON f.friend_id = mf.friend_id1 OR f.friend_id = mf.friend_id2 
           WHERE (mf.friend_id1 = ? OR mf.friend_id2 = ?) 
-          AND f.friend_id != ?";
+          AND f.friend_id != ? 
+          ORDER BY f.profile_name ASC"; // Sorting by profile name in ascending order
+    $stmt = mysqli_prepare($conn, $sql);
+
 
     $stmt = mysqli_prepare($conn, $sql);
-    mysqli_stmt_bind_param($stmt, "iii", $userId, $userId, $userId);
+    mysqli_stmt_bind_param($stmt, "iii", $userId, $userId, $userId); //binding for the three placeholder
     mysqli_stmt_execute($stmt);
     $result = mysqli_stmt_get_result($stmt);
 

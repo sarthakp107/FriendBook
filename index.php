@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +11,7 @@
 
 <body>
     <nav>
-        <a id="logo" class="nav-link">My Friends System</a>
+        <a id="logo" class="nav-link" href="index.php">My Friends System</a>
         <ul>
             <li><a class="nav-link" href="signup.php">Sign Up</a></li>
             <li><a class="nav-link" href="login.php">Log In</a></li>
@@ -26,6 +27,7 @@
 
 
     <?php
+    
 
     require_once("settings.php");
 
@@ -48,7 +50,7 @@
         echo "<p>Error creating table 1</p>";
     }
 
-
+    //creating myfriends table
     $sql2 = "CREATE TABLE IF NOT EXISTS $table2(
             friend_id1 INT NOT NULL,
             friend_id2 INT NOT NULL
@@ -76,19 +78,22 @@
                 ('ashim@example.com', 'password3', 'Ashim Adhikari', '2023-03-16', 4),
                 ('prabesh@example.com', 'password4', 'Prabesh Bhat', '2023-04-21', 4),
                 ('ram@example.com', 'password5', 'Ram Lama', '2023-05-09', 4),
-                ('sam@example.com', 'password6', 'Sam Lama', '2023-06-', 4),
+                ('sam@example.com', 'password6', 'Sam Lama', '2023-06-01', 4),
                 ('hari@example.com', 'password7', 'Hari Lama', '2023-07-07', 4),
                 ('dipty@example.com', 'password8', 'Dipty Pudasaini', '2023-08-12', 4),
                 ('bisakha@example.com', 'password9', 'Bisakha Shrestha', '2023-09-25', 4),
-                ('sita@example.com', 'password10', 'Sita Lama', '2023-10-31', 4)";
+                ('sita@example.com', 'password10', 'Sita Lama', '2023-10-31', 4),
+                ('alex@example.com', 'password11', 'Alex Tamang', '2023-10-31', 0),
+                ('zion@example.com', 'password12', 'Zion Pradhan', '2023-10-31', 0),
+                ('lion@example.com', 'password13', 'Lion Lama', '2023-10-31', 0),
+                ('abdul@example.com', 'password14', 'Abdul Sharma', '2023-10-31', 0),
+                ('sahil@example.com', 'password15', 'Sahil Khadka', '2023-10-31', 0),
+                ('prateek@example.com', 'password16', 'Prateek Bhandari', '2023-10-31', 0)"
+                ;
 
         //execute the query and check for errors
         $result4 = mysqli_query($conn, $sql4);
-        if ($result4) {
-            echo "<p>sample data populated in table $table1</p>";
-        } else {
-            echo "Error populating data in table 1";
-        }
+        
     }
 
      //checking if the table 2 (myfriends) is empty

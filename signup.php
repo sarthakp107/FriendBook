@@ -12,7 +12,7 @@
 
     <body>
         <nav>
-            <a id="logo" class="nav-link">My Friends System</a>
+            <a id="logo" class="nav-link" href="index.php">My Friends System</a>
             <ul>
                 <li><a class="nav-link" href="signup.php">Sign Up</a></li>
                 <li><a class="nav-link" href="login.php">Log In</a></li>
