@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style/topnav.css">
   <link rel="stylesheet" href="style/form.css">
+  <link rel="stylesheet" href="style/errors.css">
+  <link rel="stylesheet" href="style/pagination.css">
   <title>My Friends System</title>
 </head>
 
@@ -17,10 +19,7 @@
       <li><a class="nav-link" href="about.php">About</a></li>
     </ul>
   </nav>
-  <div class="button-container">
-    <a href='friendlist.php' class="button">Friend List</a>
-    <a href='logout.php' class="button">Log Out</a>
-  </div>
+
 
   <?php
   session_start();
@@ -138,11 +137,15 @@ WHERE f.friend_id != ?
 
 
   ?>
-
-  <h2><?php echo $profileName ?>'s Add Friend Page</h2>
-  <h2>Total number of friends is <?php echo $numOfFriends ?></h2>
+  <h2>Hello! <?php echo $profileName ?></h2>
+<h2>Add Friend Page</h2>
+  
+  <h2> Total number of friends is <?php echo $numOfFriends ?></h2>
+  <a href='friendlist.php' class="button">Friend List</a>
+    <a href='logout.php' class="button">Log Out</a>
 
   <?php
+  
   if (mysqli_num_rows($result) > 0) {
     echo "<table class='centered-form'>";
     echo "<thead><tr><th>Profile Name</th><th>Mutual Friends</th><th>Action</th></tr></thead>";
@@ -182,6 +185,7 @@ WHERE f.friend_id != ?
     echo "</table>";
 
     //pagination
+     echo "<div class='pagination'>";
     if ($currentPage > 1) {
       $previousPage = $currentPage - 1;
       echo "<a href='friendadd.php?page={$previousPage}'>Previous Page</a>";
@@ -195,6 +199,7 @@ WHERE f.friend_id != ?
       $nextPage = $currentPage + 1;
       echo "<a class='pagenumber' href='friendadd.php?page={$nextPage}'>Next</a>";
     }
+    echo "</div>";
   }
 
 //if the result is empty

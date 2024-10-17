@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/topnav.css">
     <link rel="stylesheet" href="style/form.css">
+    <link rel="stylesheet" href="style/errors.css">
 
     <title>Friend List Page</title>
 </head>

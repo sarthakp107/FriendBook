@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/topnav.css">
+    <link rel="stylesheet" href="style/errors.css">
+    <link rel="stylesheet" href="style/form.css">
+    <link rel="stylesheet" href="style/info.css">
     <title>My Friends System</title>
 </head>
 
@@ -19,15 +21,21 @@
         </ul>
     </nav>
     <h1>Assignment Home Page</h1>
-    <p>Name: Sarthak Pradhan</p>
-    <p>Student ID: 104817068</p>
-    <p>Email: 104817068@student.swin.edu.au</p>
-    <p>I declare that this assignment is my individual work. I have not worked collaboratively nor
-        have I copied from any other student’s work or from any other source.</p>
+    <div class="center-container-info">
+
+        <div class="declaration-section">
+            <p>Name: Sarthak Pradhan</p>
+            <p>Student ID: 104817068</p>
+            <p>Email: 104817068@student.swin.edu.au</p>
+            <p>I declare that this assignment is my individual work. I have not worked collaboratively nor
+                have I copied from any other student’s work or from any other source.</p>
+        </div>
+    </div>
+
 
 
     <?php
-    
+
 
     require_once("settings.php");
 
@@ -41,9 +49,9 @@
              num_of_friends INT UNSIGNED,
              PRIMARY KEY (friend_id)
              )";
-
+echo "<div class='echo-message'>";
     //executing the first query ($sql1) and check for errors
-    $result1 = mysqli_query($conn,$sql1);
+    $result1 = mysqli_query($conn, $sql1);
     if ($result1) {
         echo "<p>Table $table1 created successfully</p>";
     } else {
@@ -56,7 +64,7 @@
             friend_id2 INT NOT NULL
             )";
 
-    $result2 = mysqli_query($conn , $sql2);
+    $result2 = mysqli_query($conn, $sql2);
     if ($result2) {
         echo "<p>Table $table2 created successfully</p>";
     } else {
@@ -88,16 +96,14 @@
                 ('lion@example.com', 'password13', 'Lion Lama', '2023-10-31', 0),
                 ('abdul@example.com', 'password14', 'Abdul Sharma', '2023-10-31', 0),
                 ('sahil@example.com', 'password15', 'Sahil Khadka', '2023-10-31', 0),
-                ('prateek@example.com', 'password16', 'Prateek Bhandari', '2023-10-31', 0)"
-                ;
+                ('prateek@example.com', 'password16', 'Prateek Bhandari', '2023-10-31', 0)";
 
         //execute the query and check for errors
         $result4 = mysqli_query($conn, $sql4);
-        
     }
 
-     //checking if the table 2 (myfriends) is empty
-     $sql5 = "SELECT * FROM $table2";
+    //checking if the table 2 (myfriends) is empty
+    $sql5 = "SELECT * FROM $table2";
     //execute the query
     $result = mysqli_query($conn, $sql5);
     if (mysqli_num_rows($result) > 0) {
@@ -128,13 +134,13 @@
                 (10,2)
                 ";
 
-        if(mysqli_query($conn, $sql6)){
+        if (mysqli_query($conn, $sql6)) {
             echo "<p>Sample data populated in table $table2</p>";
-        }
-        else{
+        } else {
             echo "Error populating the data in table 2";
         }
     }
+    echo "</div>";
 
     mysqli_close($conn);
     ?>

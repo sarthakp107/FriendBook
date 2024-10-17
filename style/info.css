@@ -1,0 +1,65 @@
+/* Name and ID styling */
+.declaration-section p:first-child, 
+.declaration-section p:nth-child(2) {
+    font-weight: bold; /* Bold the name and student ID */
+}
+
+/* Email styling */
+.declaration-section p:nth-child(3) {
+    font-style: italic; /* Italicize the email */
+    color: #007bff; /* Highlight the email in blue */
+}
+
+/* Declaration statement */
+.declaration-section p:last-child {
+    font-weight: 400; /* Normal weight for the declaration text */
+    border-left: 4px solid #007bff; /* Add left border for emphasis */
+    padding-left: 10px; /* Space between text and border */
+    margin-top: 20px; /* Add space before declaration */
+}
+
+.declaration-section {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333; /* Default text color */
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background */
+    padding: 20px; /* Inner padding */
+    margin: 20px auto; /* Centering with margin auto */
+    
+}
+
+.declaration-section p {
+    font-size: 1.1rem; /* Slightly larger font size */
+    margin-bottom: 15px; /* Space between paragraphs */
+    color: #555; /* Softer text color */
+}
+
+.center-container-info {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    min-height: 50vh; /* Full viewport height */
+}
+
+
+
+
+.echo-message {
+    
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center content */
+    min-height: 100px; /* Minimum height of the box */
+    border: 2px solid #007bff; /* Blue border for the box */
+    border-radius: 8px; /* Slightly rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    padding: 20px; /* Padding inside the box */
+    margin: 20px auto; /* Centering with margin auto */
+    max-width: 600px; /* Maximum width of the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    font-family: 'Arial', sans-serif; /* Font styling */
+    font-size: 1.1rem; /* Font size */
+    color: #333; /* Text color */
+    text-align: center; /* Center the text */
+}

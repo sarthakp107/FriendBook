@@ -93,6 +93,11 @@
         }
     }
 
+    if (isset($_POST["clear"])) {
+        $email = "";
+    $password = "";
+    }
+
     ?>
     <form method="post" action="login.php" class="centered-form">
         <label for="email">Email</label>
@@ -102,7 +107,7 @@
         <input type="password" name="password" id="password">
 
         <input type="submit" value="Log in" name="login">
-        <input type="reset" value="Clear" name="clear">
+        <input type="submit" value="Clear" name="clear">
 
         <a href="index.php">Home</a>
     </form>

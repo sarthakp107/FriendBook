@@ -5,6 +5,9 @@
     border-radius: 4px; /* Rounded corners */
     padding: 10px; /* Padding around the text */
     margin: 10px 0; /* Space above and below the error message */
+    margin-right: 1000px;
     font-family: Arial, sans-serif; /* Font style */
     font-size: 14px; /* Font size */
 }
+
+

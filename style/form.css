@@ -9,7 +9,7 @@
     box-sizing: border-box;
     
     /* Centering the form */
-    margin: 0 auto; /* Horizontal center */
+    margin: 10px; /* Horizontal center */
     position: absolute; /* Absolute positioning for vertical centering */
     top: 50%; /* Push the form down by 50% of the viewport height */
     left: 50%; /* Push the form right by 50% of the viewport width */
@@ -91,5 +91,33 @@
 
 .button:hover {
     background-color: #45a049; /* Darker green on hover */
+}
+
+
+h1 {
+    font-size: 2.5rem; /* Larger font size for importance */
+    color: #060607; /* Professional blue color */
+    text-transform: uppercase; /* Make it all caps */
+    letter-spacing: 2px; /* Adds spacing between the letters for a modern look */
+    margin-bottom: 20px; /* Space below the heading */
+    font-weight: bold; /* Make the text bold */
+    border-bottom: 4px solid #000000; /* Blue underline effect */
+    
+    padding-bottom: 10px; /* Spacing between text and underline */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    text-align: center;
+}
+
+/* Hover effect for h1 */
+h1:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Adjust font size for smaller devices */
+        letter-spacing: 1px; /* Adjust letter spacing */
+    }
 }
 

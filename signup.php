@@ -19,6 +19,7 @@
                 <li><a class="nav-link" href="about.php">About</a></li>
             </ul>
         </nav>
+        <h1>Sign UP</h1>
 
 
 <?php
@@ -132,6 +133,16 @@ if (isset($_POST["register"])) {
         mysqli_stmt_close($stmt);
     }
 }
+
+// Clear the form values when the clear button is pressed
+if (isset($_POST["clear"])) {
+    $signUpEmail = "";
+    $signUpProfileName = "";
+    $signUpPassword = "";
+    $signUpConfirmPassword = "";
+}
+
+
 ?>
     
         <form method="post" action="signup.php" class="centered-form">
@@ -148,7 +159,7 @@ if (isset($_POST["register"])) {
             <input type="password" name="confirmPassword" id="confirmPassword">
 
             <input type="submit" value="Register" name="register">
-            <input type="reset" value="Clear" name="clear">
+            <input type="submit" value="Clear" name="clear">
 
 
             <a href="index.php">Home</a>
