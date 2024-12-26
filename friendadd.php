@@ -138,7 +138,7 @@ WHERE f.friend_id != ?
 
   ?>
   <h2>Hello! <?php echo $profileName ?></h2>
-<h2>Add Friend Page</h2>
+  <h2>Add Friend Page</h2>
   
   <h2> Total number of friends is <?php echo $numOfFriends ?></h2>
   <a href='friendlist.php' class="button">Friend List</a>

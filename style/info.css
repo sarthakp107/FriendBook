@@ -1,5 +1,27 @@
 /* Name and ID styling */
-.declaration-section p:first-child, 
+.declaration-section p:first-child {
+    font-weight: 400; /* Normal weight for the declaration text */
+    border-left: 4px solid #45c754; /* Green left border for emphasis */
+    padding-left: 15px; /* Increased space between text and border */
+    margin-top: 20px; /* Add space before declaration */
+    font-size: 1.2em; /* Slightly larger text for emphasis */
+    color: #333; /* Darker text color for better readability */
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+.declaration-section p:first-child:hover {
+    color: #fff; /* Change text color to white on hover */
+    background-color: #45c754; /* Green background on hover */
+    transform: translateX(5px); /* Slide text a little to the right */
+    border-left: 4px solid #fff; /* Change border color on hover */
+}
+
+.declaration-section p:first-child {
+    font-weight: 400;  
+    border-left: 4px solid #45c754;
+     padding-left: 10px; 
+ margin-top: 20px;
+}
 .declaration-section p:nth-child(2) {
     font-weight: bold; /* Bold the name and student ID */
 }
@@ -7,16 +29,25 @@
 /* Email styling */
 .declaration-section p:nth-child(3) {
     font-style: italic; /* Italicize the email */
-    color: #007bff; /* Highlight the email in blue */
+    color: #d12121; /* Highlight the email in blue */
 }
+
 
 /* Declaration statement */
 .declaration-section p:last-child {
     font-weight: 400; /* Normal weight for the declaration text */
-    border-left: 4px solid #007bff; /* Add left border for emphasis */
+    border-left: 4px solid #1818ce; /* Add left border for emphasis */
     padding-left: 10px; /* Space between text and border */
     margin-top: 20px; /* Add space before declaration */
+    transition: all 0.3s ease; 
 }
+.declaration-section p:last-child:hover {
+    color: #fff; /* Change text color to white on hover */
+    background-color: #1818ce; /* Green background on hover */
+    transform: translateX(5px); /* Slide text a little to the right */
+    border-left: 4px solid #fff; /* Change border color on hover */
+}
+
 
 .declaration-section {
     font-family: 'Arial', sans-serif;

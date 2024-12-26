@@ -20,15 +20,19 @@
             <li><a class="nav-link" href="about.php">About</a></li>
         </ul>
     </nav>
-    <h1>Assignment Home Page</h1>
+    <h1> Home Page</h1>
     <div class="center-container-info">
 
         <div class="declaration-section">
-            <p>Name: Sarthak Pradhan</p>
-            <p>Student ID: 104817068</p>
-            <p>Email: 104817068@student.swin.edu.au</p>
-            <p>I declare that this assignment is my individual work. I have not worked collaboratively nor
-                have I copied from any other student’s work or from any other source.</p>
+            <p>Welcome to My Friend System</p>
+            <p>
+
+                My Friend System is a dynamic web application designed to bring simplicity and organization to managing your social connections. Built using PHP and MySQL, this platform allows users to create an account, log in securely, and connect with friends seamlessly.
+
+                With features like adding friends, viewing your friend list, and even checking mutual friend counts, My Friend System ensures an engaging and user-friendly experience. The application also includes pagination to efficiently navigate large lists of connections. And when you're done, logging out is just a click away.
+            </p>
+            <p>Explore, connect, and manage your friendships effortlessly with My Friend System!</p>
+            <p>Sarthak Pradhan</p>
         </div>
     </div>
 
@@ -49,7 +53,7 @@
              num_of_friends INT UNSIGNED,
              PRIMARY KEY (friend_id)
              )";
-echo "<div class='echo-message'>";
+    echo "<div class='echo-message'>";
     //executing the first query ($sql1) and check for errors
     $result1 = mysqli_query($conn, $sql1);
     if ($result1) {
