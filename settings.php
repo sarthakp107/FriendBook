@@ -7,7 +7,7 @@
     $host = "localhost";
     $user = "root";
     $pswd = "";
-    $dbnm = "MyFriendSystem";
+    $dbnm = "FriendBook";
 
     $table1 = "friends";
     $table2 = "myfriends";

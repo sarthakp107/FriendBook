@@ -22,34 +22,22 @@
 <div class="container">
     <h1>About This Project</h1>
     
-    <h2>Tasks Overview</h2>
+    <div class="center-container-info">
+
+<div class="declaration-section">
+    <p>Welcome to My Friend System</p>
+    <p>
+
+        My Friend System is a dynamic web application designed to bring simplicity and organization to managing your social connections. Built using PHP and MySQL, this platform allows users to create an account, log in securely, and connect with friends seamlessly.
+
+        With features like adding friends, viewing your friend list, and even checking mutual friend counts, My Friend System ensures an engaging and user-friendly experience. The application also includes pagination to efficiently navigate large lists of connections. And when you're done, logging out is just a click away.
+    </p>
+    <p>Explore, connect, and manage your friendships effortlessly with My Friend System!</p>
+    <p>Sarthak Pradhan</p>
+</div>
+</div>
+      
     
-        <li>What tasks you have not attempted or not completed?
-            <ul>
-                <li>I have completed all the tasks</li>
-            </ul>
-        </li>
-        <li>What special features have you done, or attempted, in creating the site that we should know about?
-            <ul>
-                <li>There are no special feature that I have attempted.</li>
-                <li>I tried to create a random profile details including pictures for each profile but could not succeed</li>
-            </ul>
-        </li>
-        <li>Which parts did you have trouble with?
-            <ul>
-                <li>I mostly had trouble with writing the advanced query for updating the friends table after adding the friend. It was the most challenging part that I faced as I was not much familier with writing advanced queries.</li>
-            </ul>
-        </li>
-        <li>What would you like to do better next time?
-            <ul>
-                <li>Next time I would probably create a better interface. Other than that I would learn sql and different queries which would make it a lot easier to do.</li>
-            </ul>
-        </li>
-        <li>What additional features did you add to the assignment? (if any)
-            <ul>
-                <li>I have not added any extra features for the asssignment.</li>
-            </ul>
-        </li>
     </ul>
     
     <h2>Useful Links</h2>
